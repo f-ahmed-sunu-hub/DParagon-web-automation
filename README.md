@@ -1,30 +1,32 @@
-# 🚀 Automated UI Testing - D'Paragon
+# 🚀 Professional Web Automation Suite - D'Paragon
 
-Welcome! This repository showcases a focused automation testing suite for the **D'Paragon** web application. As a QA professional, I designed these scripts to ensure the core functionalities—from landing page navigation to room search—work seamlessly across different scenarios.
+Welcome! This repository showcases a comprehensive end-to-end automation testing suite for the **D'Paragon** web application. As a QA Engineer, I developed these scripts to handle complex UI behaviors, including nested navigation, dynamic pop-ups, and multi-business unit validation.
 
 ## 🎯 Key Scenarios Tested
-- **Dynamic Pop-up Handling:** Automated logic to detect and close promotional pop-ups before interacting with the main UI.
-- **Main Navigation Flow:** Validating menu consistency (Beranda, Partnership) and verifying correct URL redirection.
-- **Advanced Search Functionality:** Simulating real user behavior by inputting dates, selecting the city, and validating search results.
-- **State Management:** Handling "Stale Element" issues during page refreshes and navigation.
+- **Dynamic Pop-up Interception:** Smart logic to detect and close promotional pop-ups at any stage of the user journey.
+- **Extended Navigation Audit:** Validating all 9 main and sub-menus (Home, Partnership, Corporate Sales, Cross Branding, Trip & Tour, About, Promo, Gallery, and Contact).
+- **Sub-Menu Interaction:** Handling hidden elements and nested spans within the responsive navigation drawer.
+- **Automated Search Flow:** Simulating full user booking behavior (Date selection, duration, city filtering, and result validation).
+- **Cross-Environment Stability:** Implemented Incognito sessions and explicit window sizing to ensure consistent test results.
 
 ## 🛠️ Tech Stack & Tools
 - **IDE:** IntelliJ IDEA
-- **Language:** Java
+- **Language:** Java (JDK 21+)
 - **Automation:** Selenium WebDriver
 - **Test Framework:** TestNG
 - **Build Tool:** Maven (Project Object Model)
 
-## 📋 Highlights of the Project
-- **Reliable Locators:** Uses a mix of XPath and CSS Selectors for robust element discovery.
-- **Smart Waits:** Implementation of Implicit and Thread sleeps for smooth UI transitions.
-- **Reporting:** Concise console logging to track each test step in real-time.
+## 📋 Project Highlights
+- **Robust Locators:** Utilizes specialized XPath `descendant` and `contains` strategies to ensure 100% element discovery.
+- **JavaScript Execution:** Fallback click mechanisms using `JavascriptExecutor` to bypass UI obstructions.
+- **Clean Code Standards:** Optimized using modern Java standards and centralized helper methods for reusable logic.
+- **Detailed Reporting:** Professional console logging for step-by-step execution tracking.
 
 ## ⚙️ How to Run
 1. Clone this repository.
 2. Open the project in **IntelliJ IDEA**.
-3. Ensure you have **Maven** dependencies installed.
-4. Run `DParagonBookingTest.java` directly or via TestNG XML.
+3. Ensure **Maven** dependencies are loaded via `pom.xml`.
+4. Run `DParagonTest.java` for full navigation audit or `DParagonBookingTest.java` for search functionality.
 
 ---
-*Created for portfolio purposes by a dedicated QA professional.*
+*Developed for professional portfolio purposes by a dedicated QA Specialist.*
